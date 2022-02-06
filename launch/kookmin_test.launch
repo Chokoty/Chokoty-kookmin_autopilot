@@ -1,0 +1,7 @@
+<launch>
+
+  <node name="main" pkg="kookmin" type="main.py" output="screen" />
+    
+</launch>
+
+
