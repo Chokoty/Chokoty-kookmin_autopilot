@@ -1,9 +1,0 @@
-<launch>
-
-  <node name="main" pkg="kookmin" type="main_planner.py" output="screen" />
-  
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find wecar_ros)/rviz/planner.rviz" />
-
-</launch>
-
-
