@@ -15,9 +15,10 @@ from math import cos,sin,sqrt,pow,atan2,pi
 
 class wecar_planner():
 
-    def __init__(self):
+    def __init__(self, name_path):
 
-        self.path_name="test_path1"
+        self.path_name=name_path
+        print(self.path_name)
 
         #publisher
         self.global_path_pub= rospy.Publisher('/global_path',Path, queue_size=1) ## global_path publisher

@@ -13,11 +13,11 @@ from wecar_plan import wecar_planner
 
 class Kookmin(object):
 
-    def __init__(self) :
+    def __init__(self, path_name) :
         self.rate = rospy.Rate(10)
         self.pubEgo_speed = rospy.Publisher("/commands/motor/speed", Float64, queue_size=10)
         self.pubEgo_angle = rospy.Publisher("/commands/servo/position", Float64, queue_size=10)
-        self.wplanner = wecar_planner()
+        self.wplanner = wecar_planner(path_name)
 
 
     def control(self) :
